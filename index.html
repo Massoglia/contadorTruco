@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./scripts/index.js" defer type="module"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Contador Truco</title>
+	<link rel="icon" href="img/iconocart.ico">
+</head>
+<body>
+	<h1 id='textoPrincipal'><span class="conta">Contador de Truco</span></h1>
+	<div id="jugadoresContainer">
+		<div id="jugador1Container" class="jugadorContainer">
+			<h2></h2>
+			<img src="img/iconocart.ico" alt="">
+			<div class="cuenta"></div>
+			<div class="botonesJugador">
+				<button class="agregar">+</button>
+				<button class="restar">-</button>
+			</div>	
+		</div>
+		<div id="jugador2Container" class="jugadorContainer">
+			<h2></h2>
+			<img src="img/iconocart.ico" alt="">
+			<div class="cuenta"></div>
+			<div class="botonesJugador">
+				<button class="agregar">+</button>
+				<button class="restar">-</button>
+			</div>	
+		</div>
+	</div>
+	<button id="reset">Reset</button>
+	<footer>
+		<p class="footer">&copy; 2023<a href="https://www.linkedin.com/in/diego-massoglia" target="_blank">+Oglia</a></p>
+	</footer>
+
+	<dialog type="modal">
+		<p>¿Seguro que quieres borrar la partida?</p>
+		<button id="aceptar">Reset</button>
+		<button id="volver">Volver</button>
+	</dialog>
+</body>
+</html>

@@ -1,0 +1,158 @@
+:root{
+	--top-vertical:0px;
+	--left-horizontal:32px;
+	--dimensiones-grupo:70px;
+}
+
+*{
+	text-align: center;
+	font-family:  'Cascadia Code', 'Berlin Sans FB', 'Arial', sans-serif;
+	user-select: none;
+}
+
+body{
+	background-image: url('img/cart.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat ;
+	max-width: 100%;
+	
+}
+
+#textoPrincipal {
+	text-align: center;
+  }
+  
+  .conta {
+	color: #FFFFFF;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1003%26quot%3b)'%3e%3c/rect%3e%3cpath d='M1440 0L768.21 0L1440 112.08z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M768.21 0L1440 112.08L1440 344.96L420.68000000000006 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M420.68000000000006 0L1440 344.96L1440 418.54999999999995L203.83000000000007 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M203.83000000000015 0L1440 418.54999999999995L1440 518.25L189.70000000000016 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L63.73 560L0 493.93z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 493.93L63.73 560L680.84 560L0 389.45z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 389.45L680.84 560L837.95 560L0 147.35z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 147.35000000000002L837.95 560L1050.73 560L0 116.71000000000002z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+	border-radius: 4px;
+  }
+
+
+#jugadoresContainer {
+  display: flex;
+	justify-content: center;	
+}
+
+.jugadorContainer {
+	color: #f8f4f4;
+	box-shadow: rgba(48, 89, 222, 0.17) 0px -23px 25px 0px inset, rgba(43, 49, 199, 0.15) 0px -36px 30px 0px inset, rgba(51, 47, 180, 0.1) 0px -79px 40px 0px inset, rgba(79, 79, 143, 0.06) 0px 2px 1px, rgba(62, 77, 163, 0.09) 0px 4px 2px, rgba(42, 67, 181, 0.09) 0px 8px 4px, rgba(14, 50, 180, 0.09) 0px 16px 8px, rgba(38, 38, 56, 0.09) 0px 32px 16px;
+	width: 40vw;
+	min-height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1003%26quot%3b)'%3e%3c/rect%3e%3cpath d='M1440 0L768.21 0L1440 112.08z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M768.21 0L1440 112.08L1440 344.96L420.68000000000006 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M420.68000000000006 0L1440 344.96L1440 418.54999999999995L203.83000000000007 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M203.83000000000015 0L1440 418.54999999999995L1440 518.25L189.70000000000016 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L63.73 560L0 493.93z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 493.93L63.73 560L680.84 560L0 389.45z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 389.45L680.84 560L837.95 560L0 147.35z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 147.35000000000002L837.95 560L1050.73 560L0 116.71000000000002z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+	border-radius: 5px;
+	margin: 10px;
+}
+
+h2{
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+img{
+	height: var(--dimensiones-grupo)
+}
+
+.cuenta{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grupo{
+	position: relative;
+	height: var(--dimensiones-grupo);
+	width: var(--dimensiones-grupo);
+	margin: 10px;
+}
+
+.fosforo1{
+	position: absolute;
+	transform: rotate(90deg);
+	top:-30px;
+	left:var(--left-horizontal);
+}
+
+.fosforo2{
+	position: absolute;
+	transform: rotate(180deg);
+	left:  65px;
+	top: var(--top-vertical)
+}
+
+.fosforo3{
+	position: absolute;
+	transform: rotate(270deg);
+	top: 32px;
+	left:var(--left-horizontal);
+}
+
+.fosforo4{
+	position: absolute;
+	left: 0px;
+	top: var(--top-vertical)
+}
+
+.fosforo5{
+	position: absolute;
+	transform: rotate(45deg);
+	left:34px;
+	top:0px
+}
+
+.botonesJugador{
+	position:fixed;
+	margin-top: auto;
+	top:50px;
+}
+
+button {
+	color: #fff;
+	padding: 15px 25px;
+	background-color: #489ddf;
+	background-image: radial-gradient(93% 87% at 87% 89%, rgba(10, 10, 40, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(244, 242, 250, 0.55) 0%, rgba(110, 118, 238, 0) 69.79%, rgba(97, 97, 241, 0) 100%);
+	box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(245, 243, 251, 0.6), inset 0px -8px 36px rgba(49, 49, 65, 0.3), inset 0px 1px 5px rgba(249, 249, 254, 0.6), 2px 19px 31px rgba(36, 36, 141, 0.2);
+	border-radius: 14px;
+	font-weight: bold;
+	font-size: 16px;
+  
+  }
+
+dialog{
+	color: #01213b;
+	font-size: larger;
+	background-image: url('img/cart.jpg');
+}
+
+.separador{
+	border-top: 2px solid rgb(16, 22, 116);
+	width: var(--dimensiones-grupo);
+	margin: 10px;
+}
+
+@media (min-width: 450px) { 
+	.separador{
+		height: var(--dimensiones-grupo);
+		width: unset;
+		border-top: unset;
+		border-left: 2px solid rgba(252, 252, 252, 0.8);
+	}
+ }
+
+
+.footer {
+	text-align: right;
+	color: #01213b;
+}
+
+
+
+
+
+
+
